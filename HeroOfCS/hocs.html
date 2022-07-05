@@ -1,0 +1,125 @@
+<html>
+
+    <head>
+        <title>Hero Of CS</title>
+
+        <style>
+            #wrapper {
+                width: 960;
+                height: 640;
+                right: 520;
+                padding-left: 0;
+                padding-right: 0;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+
+            canvas {
+                position: absolute;
+            }
+
+            #game {
+                border: 1px solid black;
+            }
+
+            #piano {
+				border: 1px solid black;
+                top: 100px;
+                left: 650px;
+                display: none;
+			}
+
+            #maze {
+               border: 1px solid black;
+               top: 100px;
+               left: 600px;
+               display: none;
+            }
+
+            #maze2 {
+               border: 1px solid black;
+               top: 100px;
+               left: 600px;
+               display: none;
+            }
+
+            #spin {
+              border: 1px solid black;
+              top: 100px;
+              left: 600px;
+              display: none;
+            }
+
+            #spin2 {
+              border: 1px solid black;
+              top: 100px;
+              left: 600px;
+              display: none;
+            }
+
+            #shoot {
+             border: 1px solid black;
+             top: 100px;
+             left: 600px;
+             display: none;
+            }
+
+            #end {
+                display: none;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <canvas id="game" width="1000" height="800"></canvas>
+            <canvas id="front" width="1000" height="800"></canvas>
+            <canvas id="dialog" width="1000" height="800"></canvas>
+            <canvas id="map" width="1000" height="800"></canvas>
+            <canvas id="piano" style="background: white;" width="400" height="640"></canvas>
+            <canvas id="maze2" style="background: white;" width="495" height="600"></canvas>
+            <canvas id="maze" style="background: white;" width="495" height="495"></canvas>
+            <canvas id="spin" style="background: white;" width="500" height="600"></canvas>
+            <canvas id="spin2" width="500" height="600"></canvas>
+            <canvas id="shoot" style="background: white;" width="500" height="600"></canvas>
+            <canvas id="end" style="background: black;" width="1000" height="800"></canvas>
+        </div>
+
+        <audio id="pianosong" loop>
+    			<source src="miniGame/Piano/piano.mp3" type="audio/mp3">
+		</audio>
+		<audio id="player2">
+
+		<audio id="player">
+    			<source src="miniGame/Piano/true.mp3" type="audio/mp3">
+		</audio>
+		<audio id="player2">
+    			<source src="miniGame/Piano/false.mp3" type="audio/mp3">
+		</audio>
+        <audio id="theme" loop>
+    			<source src="asset/audio/theme.mp3" type="audio/mp3">
+		</audio>
+        <audio id="win">
+    			<source src="asset/audio/win.mp3" type="audio/mp3">
+		</audio>
+
+        <script type="text/javascript" src="miniGame/Spin/spin.js"></script>
+        <script type="text/javascript" src="miniGame/Shoot/shoot.js"></script>
+        <script type="text/javascript" src="miniGame/Maze/maze.js"></script>
+        <script type="text/javascript" src="miniGame/Piano/pianoTile.js"></script>
+        <script type="text/javascript" src="src/Variable.js"></script>
+        <script type="text/javascript" src="src/ImageLoader.js"></script>
+        <script type="text/javascript" src="src/Entity.js"></script>
+        <script type="text/javascript" src="src/MapRender.js"></script>
+        <script type="text/javascript" src="src/PopUp.js"></script>
+        <script type="text/javascript" src="src/MapChange.js"></script>
+        <script type="text/javascript" src="src/Player.js"></script>
+        <script type="text/javascript" src="src/Npc.js"></script>
+        <script type="text/javascript" src="src/MissionChange.js"></script>
+        <script type="text/javascript" src="src/GameEngine.js"></script>
+    </body>
+
+</html>

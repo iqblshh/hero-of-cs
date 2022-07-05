@@ -1,0 +1,201 @@
+   <html>
+    <head>
+    <script>
+    function show(shown, hidden) {
+      document.getElementById(shown).style.display='block';
+      document.getElementById(hidden).style.display='none';
+      return false;
+    }
+
+    var bleep = new Audio();
+    bleep.src = "asset/audio/clicksound.mp3";
+
+    </script>
+    </head>
+
+
+
+<style type="text/css">
+           body {
+              background-image: url('asset/map/bg1.PNG');
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: cover;
+              position: relative;
+          }
+</style>
+
+
+    <body>
+
+
+<!--PAGE INTERFACE-->
+
+      <div id="pageInterface">
+
+        <link rel="stylesheet" href="styleindex1.css">
+        <link rel="stylesheet" href="button12.css">
+
+        <div class = "container1">
+          <center><h1>>Hero of CS<</h1></center>
+          <center><p><b>|>|</b>A Journey Through the Computer System<b>|<|</b></p></center>
+        </div>
+
+
+        <div class = "container2">
+          <center><a onmousedown="bleep.play()"  onclick="return show('pageIntro1','pageInterface');"><button class="custom-btn btn-12"><span>LET'S GO</span><span>START</span></button></a></center>
+
+          <center><a href="#" onmousedown="bleep.play()" onclick="return show('pageCredit','pageInterface');"><button class="custom-btn btn-12"><span>CREDITS</span><span>ABOUT US</span></button></a></center>
+
+        </div>
+
+      </div>
+
+
+<!--PAGE CREDIT-->
+
+      <div id="pageCredit" style="display:none">
+        <div class = "container1">
+          <center><h1>>Hero of CS<</h1></center>
+          <center><p><b>|>|</b>A Journey Through the Computer System<b>|<|</b></p></center>
+        </div>
+
+
+        <div class = "container2">
+        <link rel="stylesheet" href="styleindex2.css">
+        <link rel="stylesheet" href="button12.css">
+
+          <br>
+          <h1>Credits</h1>
+
+          <h2>Main Coding </h2>
+          <a>IQBAL SHAH BIN ABDUL HALIM SHAH</a>
+
+
+          <h2>User Interface & Character Design & Map Design</h2>
+          <a>MUHAMMAD AMIR IRFAN BIN IBRAHIM</a>
+
+
+          <h2>Sound Effect & Music</h2>
+          <a>MUHAMMAD RUSYDI HAZIQ BIN HASHIM</a>
+
+
+          <div class="frame">
+              <a href="#" onmousedown="bleep.play()" onclick="return show('pageInterface','pageCredit');"><button class="custom-btn btn-12"><span>Back</span><span>Main Menu</span></button></a>
+          </div>
+        </div>
+      </div>
+
+
+      <!--PAGE INTRO1-->
+      <div id = "pageIntro1" style="display:none">
+      			<link rel="stylesheet" href="styleindex2.css">
+                <link rel="stylesheet" href="button12.css">
+
+                <div class = "container1">
+                  <center><h1>>Hero of CS<</h1></center>
+                  <center><p><b>|>|</b>A Journey Through the Computer System<b>|<|</b></p></center>
+                </div>
+
+            <div class = "container2">
+
+
+
+                <p>
+                  >Story<
+		<br> &nbsp; Once upon a time, there was a kingdom called "Computer Land". The people there live in harmony and peace. They farm, they walk, they shop happily. But one day, the Virus come out of nowhere and attack the kingdom and conquer them. They can do nothing now but to feel afraid all the time. The Viruses were all over the place. They are all just hoping for a hero to save them. There is also a professor who used to work for the kingdom. He had a vision that someone will come to the rescue. </br>
+                </p>
+
+
+                <div class="frame">
+                  <a href="#" onmousedown="bleep.play()" onclick="return show('pageIntro2','pageIntro1');"><button class="custom-btn btn-12"><span>Nexts</span><span>Done</span></button></a>
+                </div>
+          </div>
+      </div>
+
+<!--PAGE INTRO2-->
+      <div id = "pageIntro2" style="display:none">
+
+                <div class = "container1">
+                  <center><h1>>Hero of CS<</h1></center>
+                  <center><p><b>|>|</b>A Journey Through the Computer System<b>|<|</b></p></center>
+                </div>
+
+            <div class = "container2">
+                <link rel="stylesheet" href="styleindex2.css">
+                <link rel="stylesheet" href="button12.css">
+
+
+                <p>
+                  >Story<
+		<br> The kingdom consist of several region. 6 region to be specific. Every region had been conquered by the Viruses and there were chaos now and then. Player need to go to every region to solve the problem and rescue the region from the viruses. Every region has their own missions and challenges to be completed. Solve the challenges and try to win the kingdom back.</br>
+                </p>
+
+
+                <div class="frame">
+                  <a href="#" onmousedown="bleep.play()" onclick="return show('pageGuide','pageIntro2');"><button class="custom-btn btn-12"><span>Next</span><span>Done</span></button></a>
+                </div>
+          </div>
+      </div>
+
+<!--PAGE GUIDE-->
+      <div id = "pageGuide" style="display:none">
+
+                <div class = "container1">
+                  <center><h1>>Hero of CS<</h1></center>
+                  <center><p><b>|>|</b>A Journey Through the Computer System<b>|<|</b></p></center>
+                </div>
+
+            <div class = "container2">
+                <link rel="stylesheet" href="styleindex2.css">
+                <link rel="stylesheet" href="button12.css">
+
+
+                <p>
+                  >Guide<
+		<br> To move the character, use "W" for up, "S" for down, "A" for left, "D" for right and "SPACEBAR" for Interact. To next action, you can use "E" </br>
+                </p>
+
+
+                <div class="frame">
+                  <center><a onmousedown="bleep.play()"  href="hocs.html"><button class="custom-btn btn-12"><span>PLAY</span><span>NEXT</span></button></a></center>
+                </div>
+          </div>
+      </div>
+
+
+<!--PAGE GAMEPLAY
+
+      <div id = "pageGame" style="display:none">
+
+        <link rel="stylesheet" href="button12.css">
+        <link rel="stylesheet" href="styleindex3.css">
+
+        <canvas width="960" height="640"></canvas>
+
+        <div id="wrapper">
+            <canvas id="game" width="1000" height="800"></canvas>
+            <canvas id="front" width="1000" height="800"></canvas>
+            <canvas id="dialog" width="1000" height="800"></canvas>
+
+        </div>
+
+        <script type="text/javascript" src="src/ImageLoader.js"></script>
+        <script type="text/javascript" src="src/GameEngine.js"></script>
+        <script type="text/javascript" src="src/MapRender.js"></script>
+        <script type="text/javascript" src="src/MapChange.js"></script>
+        <script type="text/javascript" src="src/Player.js"></script>
+        <script type="text/javascript" src="src/Npc.js"></script>
+        <script type="text/javascript" src="src/MissionChange.js"></script>
+        <script type="text/javascript" src="src/Starter.js"></script>
+
+
+        <div class="frame">
+                  <a href="#" onmousedown="bleep.play()" onclick="return show('pageInterface','pageGame');"><button class="custom-btn btn-12"><span>Back</span><span>Main Menu</span></button></a>
+                </div>
+      </div>
+-->
+
+
+    </body>
+    </html>

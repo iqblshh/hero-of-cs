@@ -1,0 +1,50 @@
+One = function() {
+
+    if(frameCount % 75 == 0 && !checkMission) {
+        document.getElementById('front').style.background = "red";
+        document.getElementById('front').style.opacity = 0.2;
+
+        dialogBox = true;
+        ctx3.fillRect(100,450,750,185);
+        ctx3.save();
+        ctx3.fillStyle = "white";
+        ctx3.font = '30px sans-serif';
+        ctx3.fillText('Well hello there!',125,490);
+        ctx3.fillText('Go to Fan and talk to Stan. He should be up north.',125,520);
+        ctx3.fillText('Press E',735,620);
+        ctx3.restore();
+
+        clearInterval(playGame);
+    }
+
+    if(player.isInteract && player.x >= npcList['Stan'].x - 35 && player.x <= npcList['Stan'].x + 35 && player.y >= npcList['Stan'].y - 35 && player.y <= npcList['Stan'].y + 35) {
+        dialogBox = true;
+        ctx3.fillRect(100,450,750,185);
+        ctx3.save();
+        ctx3.fillStyle = "white";
+        ctx3.font = '30px sans-serif';
+        ctx3.fillText('Well hello there!',125,490);
+        ctx3.fillText('Go to power supply and see Electro. He should be east from cpu',125,520);
+        ctx3.fillText('Press E',735,620);
+        ctx3.restore();
+
+        document.getElementById('front').style.background = "";
+        document.getElementById('front').style.opacity = "";
+
+        clearInterval(playGame);
+    }
+
+    if(player.isNext && dialogBox) {
+        ctx3.clearRect(0,450,WIDTH,HEIGHT);
+
+        if(checkMission) {
+            missionTwo = setInterval(Two,40);
+            dialogBox = false;
+            clearInterval(missionOne);
+        }
+
+        checkMission = true;
+        playGame = setInterval(gameLoop,40);
+        dialogBox = false;
+    }
+}

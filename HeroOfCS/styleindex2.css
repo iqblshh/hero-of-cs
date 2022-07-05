@@ -1,0 +1,51 @@
+<style>
+	
+			/*THE BODY*/
+			   body {
+	          /*background-color: black;*/
+	            background-image: url("Demo1/map/cpu.PNG");
+	            background-repeat: no-repeat;
+	            background-attachment: fixed;  
+	            background-size: cover;
+	            position: relative;
+	        }
+			
+			body{
+				text-align: center;
+			}
+
+			h1,h2,a{
+				color: white;
+			}
+			a{
+				font-size: 20px;
+			}
+
+			.container1 {
+			      background-color: silver; 
+			      padding: 10spx ;
+			      border: 5px solid ;
+			      border-radius: 30px;
+			      margin: 40px ;
+			      margin-left: 0%;
+			      margin-right: 0%;
+			      margin-top: 0%;
+			      background-color: rgba(0,0,0,0.3);
+			}
+
+
+			.container2 {
+			      text-align: center;
+			      background-color: silver;
+			      padding: 0px;
+			      border: 5px solid ;
+			      border-radius: 30px;
+			      height: 60%;
+			      margin: 60px ;
+			      margin-left: 23%;
+			      margin-right: 23%;
+			      margin-top: 0%;
+			      background-color: rgba(0,0,0,0.3);
+			}
+
+</style>
